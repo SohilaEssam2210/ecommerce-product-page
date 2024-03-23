@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- nav bar -->
+    <nav>
+      <div class="nav-container">
+        <div class="nav-left">
+          <img src="images/icon-menu.svg" alt="menu" class="hidden menu">
+          <img src="images/logo.svg" alt="logo" class="nav-logo">
+          <div class="overlay"></div>
+          <ul class="nav-links">
+            <img src="images/icon-close.svg" alt="icon-close" class="close-btn hidden">
+            <li class="link">
+              <a href="#">Collection</a>
+            </li>
+            <li class="link">
+              <a href="#">Men</a>
+            </li>
+            <li class="link">
+              <a href="#">Women</a>
+            </li>
+            <li class="link">
+              <a href="#">About</a>
+            </li>
+            <li class="link">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-right">
+          <div class="cart-container">
+            <button class="cart-btn">
+              <span class="indicator"></span>
+              <img src="images/icon-cart.svg" alt="icon-cart" class="cart">
+            </button>
+            <div class="cart-wrp invisible">
+              <p class="cart-heading">Cart</p>
+              <div class="cart-content emty">
+                <p>Your cart is empty.</p>
+              </div>
+            </div>
+          </div>
+          <img src="images/image-avatar.png" class="avatar" alt="image-avatar">
+        </div>
+      </div>
+    </nav>
+    <!-- End nav bar -->
+    <!--* Start content -->
+    <main>
+      <section class="thumbnails">
+        <img src="./images/image-product-1.jpg" alt="main-thumb" class="main-thumb invisible-mob">
+        <div class="mobile-thumb hidden">
+          <img src="images/image-product-1.jpg" class="thum-mob" alt="">
+          <button id="previous"><img src="images/icon-previous.svg" alt="icon-previous"></button>
+          <button id="next"><img src="images/icon-next.svg" alt="icon-next"></button>
+        </div>
+        <div class="preview">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="product-1" class="selected">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="product-2">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="product-3">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="product-4">
+        </div>
+      </section>
+      <section class="content">
+        <p class="company">Sneaker company</p>
+        <h1 class="title">Fall Limited Edition Sneakers</h1>
+        <p class="info">These Lox-profile Sneaker are your perfect casual wear companion. Featuring a durable rubber
+          perfect outer sole, they'll withstand everything the weather can offer.</p>
+        <div class="price">
+          <div class="now-price">
+            <p class="now">$125.00</p>
+            <span>50%</span>
+          </div>
+          <p class="old-price"><del>$250.00</del></p>
+        </div>
+        <div class="buttons">
+          <div class="amout-btn">
+            <button id="minus"><img src="images/icon-minus.svg" alt="minus"></button>
+            <p class="amount">0</p>
+            <button id="plus"><img src="images/icon-plus.svg" alt="plus"></button>
+          </div>
+          <div class="add-btn">
+            <img src="images/icon-cart.svg" alt="">
+            Add to cart
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End content -->
+    <!-- lightbox -->
+    <div class="lightbox invisible">
+      <div class="lightbox-container">
+        <button class="close-lightbox"><img src="images/icon-close.svg" alt=""></button>
+        <img src="./images/image-product-1.jpg" alt="product-1" class="main-thumb invisible-mob">
+        <div class="preview">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="product-1" class="selected">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="product-2">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="product-3">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="product-4">
+        </div>
+      </div>
+    </div>
+    <!-- End lightbox -->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/SohilaEssam2210" target="_blank">Sohila Essam</a>.
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+
+</html>
