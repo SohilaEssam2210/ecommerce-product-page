@@ -163,7 +163,7 @@ nav {
 
 .cart-wrp {
   position: absolute;
-  left: -260px;
+  left: -265px;
   top: 50px;
   z-index: 30;
   width: 350px;
@@ -367,10 +367,15 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  height: 18px;
+  width: 100%;
 }
 
 .content .amout-btn .amount {
   font-weight: bold;
+  width: 42px;
+  text-align: center;
+  margin: 0 13px;
 }
 
 .content .buttons .add-btn {
@@ -532,6 +537,10 @@ main {
     background-color: var(--White);
   }
 
+  .nav-container .nav-left .nav-links.active {
+    display: flex;
+  }
+
   .active {
     display: flex;
   }
@@ -659,8 +668,5 @@ main {
     width: 100%;
     margin-left: 0;
     margin-bottom: 2rem;
-  }
-  .attribution {
-    padding: 15px 0;
   }
 }
